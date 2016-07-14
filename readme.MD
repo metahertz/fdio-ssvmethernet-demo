@@ -4,6 +4,8 @@ This is a vagrant environment for demoing the SSVMEthernet (Shared memory ethern
 
 The demo will walk you through setting up two docker containers, running VPP within them and then communicating between them using the SSVMEthernet interface.
 
+![SSVMEthernet Demo Setup](./ssvm_demo.png)
+
 # Use
 
 ```
