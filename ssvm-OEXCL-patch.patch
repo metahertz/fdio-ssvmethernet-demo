@@ -1,0 +1,13 @@
+diff --git a/svm/ssvm.c b/svm/ssvm.c
+index b9c6ef9..83d1cdf 100644
+--- a/svm/ssvm.c
++++ b/svm/ssvm.c
+@@ -34,7 +34,7 @@ int ssvm_master_init (ssvm_private_t * ssvm, u32 master_index)
+
+   vec_free(ssvm_filename);
+
+-  ssvm_fd = shm_open((char *) ssvm->name, O_RDWR | O_CREAT | O_EXCL, 0777);
++  ssvm_fd = shm_open((char *) ssvm->name, O_RDWR | O_CREAT, 0777);
+
+   if (ssvm_fd < 0)
+     {
