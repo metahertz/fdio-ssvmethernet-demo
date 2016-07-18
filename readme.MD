@@ -6,6 +6,10 @@ The demo will walk you through setting up two docker containers, running VPP wit
 
 ![SSVMEthernet Demo Setup](./ssvm_demo.png)
 
+## Note
+The demo has been updated to use the AF_PACKET interface between VPP and the linux kernel (in each NetNS / Container).
+Demo2 still uses the original TUN/TAP style configuration. However AF_PACKET is known to be more performant. By Default, please use demo3.
+
 # Use
 
 ```
@@ -14,7 +18,7 @@ cd fdio-ssvmethernet-demo
 vagrant up
 vagrant ssh
 
-vagrant$ /vagrant/demo2.sh
+vagrant$ /vagrant/demo3.sh
 ```
 
 The demo script will walk you through the rest.
